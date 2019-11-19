@@ -11,7 +11,7 @@ user: 'root',
 database: 'rafaelcouto',
 });
 
-connection.query('SELECT nome FROM fotos where nome="ggg"', (err,rows) => {
+connection.query('SELECT *FROM fotos', (err,rows) => {
   if(err) throw err;
 
   console.log('Data received from Db:\n');
